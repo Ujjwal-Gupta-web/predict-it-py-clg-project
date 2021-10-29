@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Predict it</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-secondary px-3" href="/">Predict-it</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/#predict">Predict Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/list_cars">List your car</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex p-2 a my-5" id="intro">
+        <div>
+            <h2>Get the right price</h2>
+            <h4>Confused about how much to charge for selling you car</h4>
+            <h4>here we are happy to help you</h4>
+            <h4>You might be missing some extra money</h4>
+            <h4>Predict you car price here.</h4>
+            <h4>Now that you are done with getting an idea about your car price</h4>
+            <h4>Are you struggling to find buyers</h4>
+            <h4>List you car for sale for free on our platform</h4>
+        </div>
+        <div>
+            <img src="/static/assets/home-1.jpg" height="500px" width="100%" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- prediction section starts here -->
+    <div class="container my-5" id="predict">
+        <h2>Price prediction</h2>
+        <form method="POST" action="/#result">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="km_driven" class="form-label">Km driven</label>
+                <input type="text" name="km_driven" class="form-control" id="km_driven" required>
+            </div>
+            <div class="mb-3">
+                <label for="car_name" class="form-label">Select Your Car</label>
+                <select name="car_name" id="car_name" class="form-control" required>
+                    <option value="">Click here to select your car model</option>
+
+                    {% for i in data %}
+                    <option value="{{i}}">{{i}}</option>
+                    {% endfor %}
+
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="dealer_type" class="form-label">Dealer type</label>
+                <select name="dealer_type" id="dealer_type" class="form-control" required>
+                    <option value="">Click here to select your dealer type</option>
+                    <option value=0>Individual</option>
+                    <option value=1>Dealer/Broker</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="owners_count" class="form-label">Enter number of owner before you</label>
+                <select name="owners_count" id="owners_count" class="form-control" required>
+                    <option value="">Click here to past number of owners</option>
+                    <option value=0>0</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        <div class="my-5" id="result" style="display:{{display}}">
+            <h1>Predicted Price : {{predicted_price}}</h1>
+            <h2>Car Details</h2>
+            <table>
+                <tr>
+                    <td>kms driven</td>
+                    <td>{{km_driven}}</td>
+                </tr>
+
+                <tr>
+                    <td>car name</td>
+                    <td>{{car_name}}</td>
+                </tr>
+
+                <tr>
+                    <td>year</td>
+                    <td>{{year}}</td>
+                </tr>
+
+                <tr>
+                    <td>fuel type</td>
+                    <td>{{fuel_type}}</td>
+                </tr>
+
+                <tr>
+                    <td>transmission</td>
+                    <td>{{transmission_type}}</td>
+                </tr>
+
+                <tr>
+                    <td>dealer type</td>
+                    <td>{{dealer_type}}</td>
+                </tr>
+
+                <tr>
+                    <td>owners count</td>
+                    <td>{{owners_count}}</td>
+                </tr>
+
+                <tr>
+                    <td>present price</td>
+                    <td>{{present_price}}</td>
+                </tr>
+
+            </table>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

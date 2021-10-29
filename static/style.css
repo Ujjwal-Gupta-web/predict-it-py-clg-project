@@ -1,0 +1,30 @@
+#intro img{
+    border-radius: 40px 40px 40px 40px;
+}
+#predict option{
+  text-transform: capitalize;
+}
+
+#result table {
+  margin:20px auto;
+}
+
+#result table td{
+  padding:10px; 
+  border:2px solid black;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    #intro {
+      flex-wrap: wrap-reverse;
+    }
+    #intro img{
+        margin-bottom: 20px;
+        height: 70vh;
+        width: 100%;
+        border-radius: 2px 2px 2px 2px;
+    }
+    
+  }
