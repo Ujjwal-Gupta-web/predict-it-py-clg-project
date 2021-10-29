@@ -62,7 +62,7 @@ def index(request):
         model =  joblib.load("ml_model/used_car_price_predict_model.joblib")
 
         #year(user_input) , present_price(to be fetched from db) , km_driven , Fuel_Type ,Seller_Type , Transmission , Owner
-        new_trial = model.predict([[year,present_price,km_driven,fuel,dealer_type,transmission,owners_count]])
+        new_trial = model.predict([[year,present_price,km_driven,fuel,dealer_type,transmission,owners_count-1]])
 
         context={
             "car_name":car_name,
