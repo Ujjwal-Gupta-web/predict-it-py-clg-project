@@ -1,0 +1,288 @@
+<select name="car_name" id="car_name" class="form-control" required="">
+                    <option value="">Click here to select your car model</option>
+                    
+                    <option value="800 (2003) - Petrol - Manual">800 (2003) - Petrol - Manual</option><option value="alto 800 (2017) - Petrol - Manual">alto 800 (2017) - Petrol - Manual</option>
+                    
+                    <option value="alto k10 (2010) - Petrol - Manual">alto k10 (2010) - Petrol - Manual</option>
+                    
+                    <option value="alto k10 (2016) - Petrol - Manual">alto k10 (2016) - Petrol - Manual</option>
+                    
+                    <option value="alto k10 (2014) - Petrol - Manual">alto k10 (2014) - Petrol - Manual</option>
+                    
+                    <option value="amaze (2015) - Petrol - Manual">amaze (2015) - Petrol - Manual</option>
+                    
+                    <option value="amaze (2015) - Petrol - Automatic">amaze (2015) - Petrol - Automatic</option>
+                    
+                    <option value="amaze (2014) - Petrol - Manual">amaze (2014) - Petrol - Manual</option>
+                    
+                    <option value="baleno (2016) - Petrol - Automatic">baleno (2016) - Petrol - Automatic</option>
+                    
+                    <option value="brio (2015) - Petrol - Automatic">brio (2015) - Petrol - Automatic</option>
+                    
+                    <option value="brio (2012) - Petrol - Manual">brio (2012) - Petrol - Manual</option>
+                    
+                    <option value="brio (2017) - Petrol - Manual">brio (2017) - Petrol - Manual</option>
+                    
+                    <option value="brio (2014) - Petrol - Manual">brio (2014) - Petrol - Manual</option>
+                    
+                    <option value="brio (2015) - Petrol - Manual">brio (2015) - Petrol - Manual</option>
+                    
+                    <option value="brio (2013) - Petrol - Manual">brio (2013) - Petrol - Manual</option>
+                    
+                    <option value="brio (2016) - Petrol - Manual">brio (2016) - Petrol - Manual</option>
+                    
+                    <option value="camry (2006) - Petrol - Automatic">camry (2006) - Petrol - Automatic</option>
+                    
+                    <option value="ciaz (2017) - Petrol - Manual">ciaz (2017) - Petrol - Manual</option>
+                    
+                    <option value="ciaz (2015) - Petrol - Manual">ciaz (2015) - Petrol - Manual</option>
+                    
+                    <option value="ciaz (2016) - Diesel - Manual">ciaz (2016) - Diesel - Manual</option>
+                    
+                    <option value="ciaz (2015) - Petrol - Automatic">ciaz (2015) - Petrol - Automatic</option>
+                    
+                    <option value="ciaz (2015) - Diesel - Manual">ciaz (2015) - Diesel - Manual</option>
+                    
+                    <option value="ciaz (2014) - Petrol - Automatic">ciaz (2014) - Petrol - Automatic</option>
+                    
+                    <option value="ciaz (2017) - Petrol - Automatic">ciaz (2017) - Petrol - Automatic</option>
+                    
+                    <option value="city (2013) - Petrol - Manual">city (2013) - Petrol - Manual</option>
+                    
+                    <option value="city (2011) - Petrol - Manual">city (2011) - Petrol - Manual</option>
+                    
+                    <option value="city (2016) - Petrol - Automatic">city (2016) - Petrol - Automatic</option>
+                    
+                    <option value="city (2014) - Petrol - Manual">city (2014) - Petrol - Manual</option>
+                    
+                    <option value="city (2006) - Petrol - Manual">city (2006) - Petrol - Manual</option>
+                    
+                    <option value="city (2014) - Diesel - Manual">city (2014) - Diesel - Manual</option>
+                    
+                    <option value="city (2015) - Petrol - Manual">city (2015) - Petrol - Manual</option>
+                    
+                    <option value="city (2016) - Petrol - Manual">city (2016) - Petrol - Manual</option>
+                    
+                    <option value="city (2010) - Petrol - Manual">city (2010) - Petrol - Manual</option>
+                    
+                    <option value="city (2015) - Diesel - Manual">city (2015) - Diesel - Manual</option>
+                    
+                    <option value="city (2016) - Diesel - Manual">city (2016) - Diesel - Manual</option>
+                    
+                    <option value="city (2009) - Petrol - Manual">city (2009) - Petrol - Manual</option>
+                    
+                    <option value="city (2017) - Diesel - Manual">city (2017) - Diesel - Manual</option>
+                    
+                    <option value="corolla (2004) - Petrol - Automatic">corolla (2004) - Petrol - Automatic</option>
+                    
+                    <option value="corolla altis (2009) - Petrol - Automatic">corolla altis (2009) - Petrol - Automatic</option>
+                    
+                    <option value="corolla altis (2010) - Petrol - Manual">corolla altis (2010) - Petrol - Manual</option>
+                    
+                    <option value="corolla altis (2011) - Petrol - Manual">corolla altis (2011) - Petrol - Manual</option>
+                    
+                    <option value="corolla altis (2016) - Petrol - Manual">corolla altis (2016) - Petrol - Manual</option>
+                    
+                    <option value="corolla altis (2011) - Diesel - Manual">corolla altis (2011) - Diesel - Manual</option>
+                    
+                    <option value="corolla altis (2010) - Petrol - Automatic">corolla altis (2010) - Petrol - Automatic</option>
+                    
+                    <option value="corolla altis (2016) - Diesel - Manual">corolla altis (2016) - Diesel - Manual</option>
+                    
+                    <option value="corolla altis (2009) - Petrol - Manual">corolla altis (2009) - Petrol - Manual</option>
+                    
+                    <option value="corolla altis (2008) - Petrol - Automatic">corolla altis (2008) - Petrol - Automatic</option>
+                    
+                    <option value="corolla altis (2012) - Petrol - Manual">corolla altis (2012) - Petrol - Manual</option>
+                    
+                    <option value="corolla altis (2017) - Petrol - Manual">corolla altis (2017) - Petrol - Manual</option>
+                    
+                    <option value="corolla altis (2013) - Petrol - Manual">corolla altis (2013) - Petrol - Manual</option>
+                    
+                    <option value="creta (2016) - Petrol - Manual">creta (2016) - Petrol - Manual</option>
+                    
+                    <option value="creta (2015) - Diesel - Manual">creta (2015) - Diesel - Manual</option>
+                    
+                    <option value="creta (2016) - Diesel - Manual">creta (2016) - Diesel - Manual</option>
+                    
+                    <option value="dzire (2009) - Petrol - Manual">dzire (2009) - Petrol - Manual</option>
+                    
+                    <option value="dzire (2015) - Petrol - Manual">dzire (2015) - Petrol - Manual</option>
+                    
+                    <option value="dzire (2014) - Diesel - Manual">dzire (2014) - Diesel - Manual</option>
+                    
+                    <option value="elantra (2015) - Diesel - Manual">elantra (2015) - Diesel - Manual</option>
+                    
+                    <option value="elantra (2015) - Petrol - Automatic">elantra (2015) - Petrol - Automatic</option>
+                    
+                    <option value="eon (2015) - Petrol - Manual">eon (2015) - Petrol - Manual</option>
+                    
+                    <option value="eon (2017) - Petrol - Manual">eon (2017) - Petrol - Manual</option>
+                    
+                    <option value="eon (2016) - Petrol - Manual">eon (2016) - Petrol - Manual</option>
+                    
+                    <option value="eon (2012) - Petrol - Manual">eon (2012) - Petrol - Manual</option>
+                    
+                    <option value="ertiga (2015) - Diesel - Manual">ertiga (2015) - Diesel - Manual</option>
+                    
+                    <option value="ertiga (2016) - Diesel - Manual">ertiga (2016) - Diesel - Manual</option>
+                    
+                    <option value="ertiga (2014) - Diesel - Manual">ertiga (2014) - Diesel - Manual</option>
+                    
+                    <option value="ertiga (2015) - Petrol - Manual">ertiga (2015) - Petrol - Manual</option>
+                    
+                    <option value="etios cross (2015) - Petrol - Manual">etios cross (2015) - Petrol - Manual</option>
+                    
+                    <option value="etios cross (2014) - Diesel - Manual">etios cross (2014) - Diesel - Manual</option>
+                    
+                    <option value="etios g (2015) - Petrol - Manual">etios g (2015) - Petrol - Manual</option>
+                    
+                    <option value="etios g (2014) - Petrol - Manual">etios g (2014) - Petrol - Manual</option>
+                    
+                    <option value="etios gd (2015) - Diesel - Manual">etios gd (2015) - Diesel - Manual</option>
+                    
+                    <option value="etios liva (2014) - Diesel - Manual">etios liva (2014) - Diesel - Manual</option>
+                    
+                    <option value="etios liva (2011) - Petrol - Manual">etios liva (2011) - Petrol - Manual</option>
+                    
+                    <option value="etios liva (2013) - Petrol - Manual">etios liva (2013) - Petrol - Manual</option>
+                    
+                    <option value="fortuner (2013) - Diesel - Automatic">fortuner (2013) - Diesel - Automatic</option>
+                    
+                    <option value="fortuner (2014) - Diesel - Automatic">fortuner (2014) - Diesel - Automatic</option>
+                    
+                    <option value="fortuner (2017) - Diesel - Automatic">fortuner (2017) - Diesel - Automatic</option>
+                    
+                    <option value="fortuner (2012) - Diesel - Automatic">fortuner (2012) - Diesel - Automatic</option>
+                    
+                    <option value="fortuner (2015) - Diesel - Automatic">fortuner (2015) - Diesel - Automatic</option>
+                    
+                    <option value="fortuner (2010) - Diesel - Manual">fortuner (2010) - Diesel - Manual</option>
+                    
+                    <option value="grand i10 (2016) - Petrol - Manual">grand i10 (2016) - Petrol - Manual</option>
+                    
+                    <option value="grand i10 (2015) - Petrol - Automatic">grand i10 (2015) - Petrol - Automatic</option>
+                    
+                    <option value="grand i10 (2015) - Diesel - Manual">grand i10 (2015) - Diesel - Manual</option>
+                    
+                    <option value="grand i10 (2017) - Petrol - Manual">grand i10 (2017) - Petrol - Manual</option>
+                    
+                    <option value="grand i10 (2013) - Diesel - Manual">grand i10 (2013) - Diesel - Manual</option>
+                    
+                    <option value="grand i10 (2015) - Petrol - Manual">grand i10 (2015) - Petrol - Manual</option>
+                    
+                    <option value="i10 (2012) - Petrol - Manual">i10 (2012) - Petrol - Manual</option>
+                    
+                    <option value="i10 (2011) - Petrol - Manual">i10 (2011) - Petrol - Manual</option>
+                    
+                    <option value="i10 (2013) - Petrol - Manual">i10 (2013) - Petrol - Manual</option>
+                    
+                    <option value="i20 (2010) - Diesel - Manual">i20 (2010) - Diesel - Manual</option>
+                    
+                    <option value="i20 (2017) - Petrol - Manual">i20 (2017) - Petrol - Manual</option>
+                    
+                    <option value="i20 (2011) - Petrol - Manual">i20 (2011) - Petrol - Manual</option>
+                    
+                    <option value="i20 (2013) - Petrol - Automatic">i20 (2013) - Petrol - Automatic</option>
+                    
+                    <option value="i20 (2014) - Diesel - Manual">i20 (2014) - Diesel - Manual</option>
+                    
+                    <option value="i20 (2012) - Diesel - Manual">i20 (2012) - Diesel - Manual</option>
+                    
+                    <option value="i20 (2012) - Petrol - Manual">i20 (2012) - Petrol - Manual</option>
+                    
+                    <option value="i20 (2016) - Petrol - Manual">i20 (2016) - Petrol - Manual</option>
+                    
+                    <option value="ignis (2017) - Petrol - Manual">ignis (2017) - Petrol - Manual</option>
+                    
+                    <option value="innova (2017) - Petrol - Automatic">innova (2017) - Petrol - Automatic</option>
+                    
+                    <option value="innova (2017) - Diesel - Automatic">innova (2017) - Diesel - Automatic</option>
+                    
+                    <option value="innova (2015) - Diesel - Manual">innova (2015) - Diesel - Manual</option>
+                    
+                    <option value="innova (2005) - Diesel - Manual">innova (2005) - Diesel - Manual</option>
+                    
+                    <option value="innova (2014) - Diesel - Manual">innova (2014) - Diesel - Manual</option>
+                    
+                    <option value="innova (2005) - Petrol - Manual">innova (2005) - Petrol - Manual</option>
+                    
+                    <option value="innova (2016) - Diesel - Automatic">innova (2016) - Diesel - Automatic</option>
+                    
+                    <option value="jazz (2017) - Petrol - Manual">jazz (2017) - Petrol - Manual</option>
+                    
+                    <option value="jazz (2010) - Petrol - Manual">jazz (2010) - Petrol - Manual</option>
+                    
+                    <option value="jazz (2016) - Petrol - Automatic">jazz (2016) - Petrol - Automatic</option>
+                    
+                    <option value="jazz (2016) - Petrol - Manual">jazz (2016) - Petrol - Manual</option>
+                    
+                    <option value="land cruiser (2010) - Diesel - Manual">land cruiser (2010) - Diesel - Manual</option>
+                    
+                    <option value="omni (2012) - Petrol - Manual">omni (2012) - Petrol - Manual</option>
+                    
+                    <option value="ritz (2014) - Petrol - Manual">ritz (2014) - Petrol - Manual</option>
+                    
+                    <option value="ritz (2012) - Diesel - Manual">ritz (2012) - Diesel - Manual</option>
+                    
+                    <option value="ritz (2011) - Petrol - Manual">ritz (2011) - Petrol - Manual</option>
+                    
+                    <option value="ritz (2013) - Petrol - Manual">ritz (2013) - Petrol - Manual</option>
+                    
+                    <option value="s cross (2015) - Diesel - Manual">s cross (2015) - Diesel - Manual</option>
+                    
+                    <option value="swift (2011) - Petrol - Manual">swift (2011) - Petrol - Manual</option>
+                    
+                    <option value="swift (2013) - Petrol - Manual">swift (2013) - Petrol - Manual</option>
+                    
+                    <option value="swift (2017) - Petrol - Manual">swift (2017) - Petrol - Manual</option>
+                    
+                    <option value="swift (2014) - Diesel - Manual">swift (2014) - Diesel - Manual</option>
+                    
+                    <option value="sx4 (2013) - Diesel - Manual">sx4 (2013) - Diesel - Manual</option>
+                    
+                    <option value="sx4 (2010) - Petrol - Manual">sx4 (2010) - Petrol - Manual</option>
+                    
+                    <option value="sx4 (2011) - Petrol - Automatic">sx4 (2011) - Petrol - Automatic</option>
+                    
+                    <option value="sx4 (2011) - CNG - Manual">sx4 (2011) - CNG - Manual</option>
+                    
+                    <option value="sx4 (2003) - Petrol - Manual">sx4 (2003) - Petrol - Manual</option>
+                    
+                    <option value="sx4 (2008) - Petrol - Manual">sx4 (2008) - Petrol - Manual</option>
+                    
+                    <option value="verna (2014) - Petrol - Manual">verna (2014) - Petrol - Manual</option>
+                    
+                    <option value="verna (2012) - Petrol - Manual">verna (2012) - Petrol - Manual</option>
+                    
+                    <option value="verna (2015) - Diesel - Manual">verna (2015) - Diesel - Manual</option>
+                    
+                    <option value="verna (2013) - Petrol - Automatic">verna (2013) - Petrol - Automatic</option>
+                    
+                    <option value="verna (2017) - Petrol - Manual">verna (2017) - Petrol - Manual</option>
+                    
+                    <option value="verna (2013) - Petrol - Manual">verna (2013) - Petrol - Manual</option>
+                    
+                    <option value="verna (2013) - Diesel - Manual">verna (2013) - Diesel - Manual</option>
+                    
+                    <option value="verna (2012) - Diesel - Manual">verna (2012) - Diesel - Manual</option>
+                    
+                    <option value="verna (2015) - Petrol - Manual">verna (2015) - Petrol - Manual</option>
+                    
+                    <option value="vitara brezza (2018) - Diesel - Manual">vitara brezza (2018) - Diesel - Manual</option>
+                    
+                    <option value="wagon r (2011) - Petrol - Manual">wagon r (2011) - Petrol - Manual</option>
+                    
+                    <option value="wagon r (2015) - CNG - Manual">wagon r (2015) - CNG - Manual</option>
+                    
+                    <option value="wagon r (2013) - Petrol - Manual">wagon r (2013) - Petrol - Manual</option>
+                    
+                    <option value="wagon r (2006) - Petrol - Manual">wagon r (2006) - Petrol - Manual</option>
+                    
+                    <option value="xcent (2017) - Petrol - Manual">xcent (2017) - Petrol - Manual</option>
+                    
+                    <option value="xcent (2015) - Petrol - Manual">xcent (2015) - Petrol - Manual</option>
+                    
+                    <option value="xcent (2014) - Petrol - Manual">xcent (2014) - Petrol - Manual</option>
+                    
+                </select>

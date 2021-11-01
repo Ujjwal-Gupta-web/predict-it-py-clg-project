@@ -12,9 +12,6 @@
 
 <body>
 
-
-
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand bg-secondary px-3" href="/">Predict-it</a>
@@ -31,20 +28,18 @@
             <a class="nav-link" aria-current="page" href="/#predict">Predict Price</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/list_cars">List your car</a>
+            <a class="nav-link" aria-current="page" href="/list_cars">List your car</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/browse">Browse Cars</a>
+            <a class="nav-link active" aria-current="page" href="/browse">Browse Cars</a>
           </li>
         </ul>
 
-      
-
         <div class="d-flex">
           {% if user.is_authenticated %}
-             <button class="btn btn-dark text-white mx-3">
-                    <a class="nav-link text-white p-1" aria-current="page" href="/dashboard">{{request.user.first_name}}</a>
-          </button>
+          <button class="btn btn-dark text-white mx-3">
+            <a class="nav-link text-white p-1" aria-current="page" href="/dashboard">{{request.user.first_name}}</a>
+  </button>
           <button type="button" class="btn btn-outline-secondary">
             <a class="text-white text-decoration-none" href="/logout">Logout</a>
           </button>
@@ -62,11 +57,6 @@
       </div>
     </div>
   </nav>
-
-    <div class="alert alert-success alert-dismissible fade show" role="alert" style="display:{{display}}">
-          {{message}}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
 
   <!--Signup Modal -->
   <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
@@ -129,99 +119,106 @@
   </div>
 
 
-
-
-
-
   <div class="container my-5">
-    <h3 class="mb-5">List your car with us</h3>
-    {% if user.is_authenticated %}
-    <form class="row g-3" action="/list_cars" method="POST">
-      {% csrf_token %}
-      <button type="button" class="btn btn-dark" disabled>
-        <span class="sr-only">Email : {{request.user.username }}</span>
-      </button>
-      <div class="col-md-6">
-        <label for="list-car_name" class="form-label">Car name</label>
-        <input type="text" class="form-control" id="list-car_name" name="list-car_name" required>
+    <h2 class="mb-5">Browse used cars according to your budget</h2>
+
+    <label for="budget_price" class="form-label">Select your budget</label>
+    <input type="range" class="form-range" min="0" max="2000000" value="100000"
+      onchange="upto_this_price_value_change(this.value,this.min)" id="budget_price">
+    <div class="row">
+      <div class="col-4 col-md-4">
+        Min : 0
       </div>
-
-      <div class="col-md-6">
-        <label for="list-price" class="form-label">Price</label>
-        <input type="number" class="form-control" id="list-price" name="list-price" required>
+      <div class="col-4 col-md-4" id="upto_this_price">
+        Current :
       </div>
-
-      <div class="col-md-6">
-        <label for="list-km_driven" class="form-label">Kms driven</label>
-        <input type="number" class="form-control" id="list-km_driven" name="list-km_driven" required>
+      <div class="col-4 col-md-4">
+        Max : 2000000
       </div>
-
-      <div class="col-md-6">
-        <label for="list-owners_count" class="form-label">Total no of owners till today</label>
-        <input type="number" class="form-control" id="list-owners_count" name="list-owners_count" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-year" class="form-label">Year</label>
-        <input type="number" class="form-control" id="list-year" name="list-year" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-fuel_type" class="form-label">Fuel Type</label>
-        <input type="text" class="form-control" id="list-fuel_type" name="list-fuel_type" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-transmission_type" class="form-label">Transmission type</label>
-        <input type="text" class="form-control" id="list-transmission_type" name="list-transmission_type" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-phone_number" class="form-label">Enter you phone number</label>
-        <input type="number" class="form-control" id="list-phone_number" name="list-phone_number" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-seller_name" class="form-label">Name of the seller</label>
-        <input type="text" class="form-control" id="list-seller_name" name="list-seller_name" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-city" class="form-label">Car owner belongs to which city</label>
-        <input type="text" class="form-control" id="list-city" name="list-city" required>
-      </div>
-
-      <div class="col-md-6">
-        <label for="list-number_plate" class="form-label">Car number plate number</label>
-        <input type="text" class="form-control" id="list-number_plate" name="list-number_plate" required>
-      </div>
-
-      {% comment %} <div class="col-md-6">
-        <label for="email" class="form-label">Email : </label>
-        <input type="text" class="form-control" id="email" name="email" value={{request.user.username }} disabled>
-      </div> {% endcomment %}
-
-
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">List this car</button>
-      </div>
-    </form>
-    {% else %}
-    Signup or Login to list your car
-    <div class="d-flex my-3">
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-        Login
-      </button>
-      <button type="button" class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#SignupModal">
-        SignUp
-      </button>
     </div>
-    {% endif %}
+    <button type="button" class="btn btn-info my-3" onclick="set_final_budget()">Set budget and start browsing</button>
+    <h3 id="final_budget"></h3>
+    Here your cars will get displayed
+
+    <div id="display-cars-section">
+      {% for car in all_listed_cars %}
+
+      <div class="card w-100 my-3">
+        <div class="card-body">
+          <h5 class="card-title">car_name : {{car.list_car_name}}</h5>
+          <p class="card-text mb-2 text-success font-weight-bold selling-price">{{car.list_price}}</p>
+          <p class="card-text mb-2 text-info font-weight-bold">km_driven : {{car.list_km_driven}}</p>
+          <p class="card-text mb-2">year : {{car.list_year}}</p>
+          <p class="card-text mb-2">seller_name : {{car.list_seller_name}}</p>
+          <p class="card-text mb-2">city : {{car.list_city}}</p>
+          <a href="tel:{{car.list_phone_number}}" class="btn btn-success my-2">Call now</a>
+        </div>
+        <div class="accordion accordion-flush" id="listed_cars_details">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed btn-col" type="button" data-bs-toggle="collapse"
+                 aria-expanded="false">
+                See more details
+              </button>
+            </h2>
+            <div  class="accordion-collapse collapse div-col" aria-labelledby="flush-headingOne"
+              data-bs-parent="#listed_cars_details">
+              <div class="accordion-body">
+                <p>owners_count : {{car.list_owners_count}}</p>
+                <p>fuel_type : {{car.list_fuel_type}}</p>
+                <p>transmission_type : {{car.list_transmission_type}}</p>
+                <p>number_plate : {{car.list_number_plate}}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script>
+    upto_this_price_value_change(1000000, 0);
+
+    function upto_this_price_value_change(val, min_val) {
+      document.getElementById("upto_this_price").innerHTML = "Current : " + val;
+      document.getElementById("final_budget").innerHTML = "";
+      document.getElementById("display-cars-section").style.display = "none";
+    }
+
+    function set_final_budget() {
+      document.getElementById("final_budget").innerHTML = "Final Budget : " + document.getElementById("budget_price").min + " to " + document.getElementById("budget_price").value;
+      document.getElementById("display-cars-section").style.display = "";
+
+      var cards = document.querySelectorAll(".card");
+      var selling_price = document.querySelectorAll(".selling-price");
+            
+
+                btn_col=document.querySelectorAll(".btn-col")
+                div_col=document.querySelectorAll(".div-col")
+        
+
+      for (let i = 0; i < cards.length; i++) {
+        btn_col[i].setAttribute("data-bs-target",`#acc-${i}`)
+        btn_col[i].setAttribute("aria-controls",`acc-${i}`)
+        div_col[i].setAttribute("id",`acc-${i}`)
+        if (document.getElementById("budget_price").value < parseInt(selling_price[i].innerHTML)) { cards[i].style.display = "none"; }
+        else {
+          { cards[i].style.display = ""; }
+        }
+      }
+
+    }
+
+
+  </script>
 </body>
 
 </html>
