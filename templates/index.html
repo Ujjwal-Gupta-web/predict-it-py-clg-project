@@ -40,8 +40,9 @@
                 <div class="d-flex">
                     {% if user.is_authenticated %}
                     <button class="btn btn-dark text-white mx-3">
-                    <a class="nav-link text-white p-1" aria-current="page" href="/dashboard">{{request.user.first_name}}</a>
-          </button>
+                        <a class="nav-link text-white p-1" aria-current="page"
+                            href="/dashboard">{{request.user.first_name}}</a>
+                    </button>
                     <button type="button" class="btn btn-outline-secondary">
                         <a class="text-white text-decoration-none" href="/logout">Logout</a>
                     </button>
@@ -62,9 +63,9 @@
     </nav>
 
     <div class="alert alert-success alert-dismissible fade show" role="alert" style="display:{{dis}}">
-            {{dis_messsage}}
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+        {{dis_messsage}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
     <!--Signup Modal -->
     <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
@@ -137,11 +138,52 @@
         <div>
             <h2>Get the right price</h2>
             <h4>Confused about how much to charge for selling you car ?</h4>
-            <h4>Predict you car price here.</h4>
+            <h4><a href="#predict" class="text-decoration-none">Predict</a> you car price here.</h4>
             <h4>You might be missing some extra money</h4>
+            <br>
+
+            <a href="/#features" class="btn btn-dark">Explore more</a>
         </div>
         <div>
             <img src="/static/assets/home-1.jpg" height="500px" width="100%" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="container p-2" id="features">
+        <h3 class="mb-3">Sailent features</h3>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Predict Used Car Price</h5>
+                        <p class="card-text">Get an approximate price of your car based on machine leraning algorithm
+                        </p>
+                        <a href="/#predict" class="btn btn-secondary">Predict price</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">List Car for sale</h5>
+                        <p class="card-text">Struggling to find buyers for your car, donot worry , we have covered it
+                            all for you</p>
+                        <a href="/list_cars" class="btn btn-secondary">List your car</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Browse cars</h5>
+                        <p class="card-text">Browse cars based on your budget and find the best buy for you.</p>
+                        <a href="/browse" class="btn btn-secondary">Browse</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -187,10 +229,10 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary">Predict</button>
+            <button type="submit" class="btn btn-dark">Predict</button>
         </form>
         <div class="my-5" id="result" style="display:{{display}}">
-            <h1>Predicted Price : {{predicted_price}}</h1>
+            <h1>Predicted Price :<span class="text-success"> ₹{{predicted_price}}</span></h1>
             <button type="button" class="btn btn-dark my-3"><a href="/#predict"
                     class="text-white text-decoration-none">Predict another car's price</a></button>
             <h2>Car Details</h2>
@@ -232,7 +274,7 @@
 
                 <tr>
                     <td>present price</td>
-                    <td>{{present_price}}</td>
+                    <td>₹{{present_price}}</td>
                 </tr>
 
             </table>
@@ -247,7 +289,6 @@
                         class="text-white text-decoration-none">Browse used cars</a></button>
             </div>
         </div>
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

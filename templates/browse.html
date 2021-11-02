@@ -137,26 +137,26 @@
       </div>
     </div>
     <button type="button" class="btn btn-info my-3" onclick="set_final_budget()">Set budget and start browsing</button>
-    <h3 id="final_budget"></h3>
+    <h4 id="final_budget"></h4>
     Here your cars will get displayed
 
     <div id="display-cars-section">
       {% for car in all_listed_cars %}
 
-      <div class="card w-100 my-3">
-        <div class="card-body">
-          <h5 class="card-title">car_name : {{car.list_car_name}}</h5>
-          <p class="card-text mb-2 text-success font-weight-bold selling-price">{{car.list_price}}</p>
-          <p class="card-text mb-2 text-info font-weight-bold">km_driven : {{car.list_km_driven}}</p>
-          <p class="card-text mb-2">year : {{car.list_year}}</p>
-          <p class="card-text mb-2">seller_name : {{car.list_seller_name}}</p>
-          <p class="card-text mb-2">city : {{car.list_city}}</p>
+      <div class="card border-dark w-100 my-3" style="background:#ebebeb;">
+        <div class="card-body text-capitalize">
+          <h5 class="card-title">{{car.list_car_name}}</h5>
+          <h6 class="card-text mb-2 text-success font-weight-bold selling-price">₹ {{car.list_price}}</h6>
+          <p class="card-text mb-2 text-primary font-weight-bold">Kms Driven : {{car.list_km_driven}}</p>
+          <p class="card-text mb-2">Model year : {{car.list_year}}</p>
+          <p class="card-text mb-2">Seller Name : {{car.list_seller_name}}</p>
+          <p class="card-text mb-2">City : {{car.list_city}}</p>
           <a href="tel:{{car.list_phone_number}}" class="btn btn-success my-2">Call now</a>
         </div>
         <div class="accordion accordion-flush" id="listed_cars_details">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed btn-col" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed btn-col btn-dark" type="button" data-bs-toggle="collapse"
                  aria-expanded="false">
                 See more details
               </button>
