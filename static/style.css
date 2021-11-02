@@ -1,7 +1,4 @@
 
-#intro img{
-    border-radius: 40px 40px 40px 40px;
-}
 #predict option{
   text-transform: capitalize;
 }
@@ -17,15 +14,3 @@
   font-weight: 500;
 }
 
-@media only screen and (max-width: 600px) {
-    #intro {
-      flex-wrap: wrap-reverse;
-    }
-    #intro img{
-        margin-bottom: 20px;
-        height: 70vh;
-        width: 100%;
-        border-radius: 2px 2px 2px 2px;
-    }
-    
-  }
