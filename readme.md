@@ -1,11 +1,3 @@
-> Ujjwal Gupta (43)​
-
-> Manoj (46)​
-
-> Deepanshu (51)​
-
-> Ayush Prakash Pandey (38)​
-
 # index page
 
 ## intro section
@@ -69,3 +61,12 @@
 <img src="./readme_assets/11.png" height="100%" width="100%">
 
 
+# Mobile version (the application is mobile responsive)
+
+<img src="./readme_assets/m-1.png" height="100%" width="100%">
+
+
+<img src="./readme_assets/m-2.png" height="100%" width="100%">
+
+
+<img src="./readme_assets/m-3.png" height="100%" width="100%">
